@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{008C26A5-4521-4570-BDDE-9A4A2F1C92AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Global_GUI</RootNamespace>
+    <AssemblyName>Global GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActiveLoan.Designer.cs">
+      <DependentUpon>ActiveLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_loan_systemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bank_loan_systemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_loan_systemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bank_loan_systemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_loan_systemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bank_loan_systemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_loan_systemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bank_loan_systemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_loan_systemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bank_loan_systemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_loan_systemDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bank_loan_systemDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_loan_systemDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bank_loan_systemDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_loan_systemDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bank_loan_systemDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_loan_systemDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bank_loan_systemDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bank_loan_systemDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bank_loan_systemDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CheckCustomerTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckCustomerTransactions.Designer.cs">
+      <DependentUpon>CheckCustomerTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseLoan.Designer.cs">
+      <DependentUpon>ChooseLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerHome.Designer.cs">
+      <DependentUpon>CustomerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerInfo.Designer.cs">
+      <DependentUpon>CustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerInformation.Designer.cs">
+      <DependentUpon>CustomerInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeHome.Designer.cs">
+      <DependentUpon>EmployeeHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeInformation.Designer.cs">
+      <DependentUpon>EmployeeInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeTransaction.Designer.cs">
+      <DependentUpon>EmployeeTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoanApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoanApplication.Designer.cs">
+      <DependentUpon>LoanApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoanTransactionsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoanTransactionsHistory.Designer.cs">
+      <DependentUpon>LoanTransactionsHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageEmployee.Designer.cs">
+      <DependentUpon>ManageEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLoans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageLoans.Designer.cs">
+      <DependentUpon>ManageLoans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyLoans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyLoans.Designer.cs">
+      <DependentUpon>MyLoans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyTransactions.Designer.cs">
+      <DependentUpon>MyTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestedLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestedLoan.Designer.cs">
+      <DependentUpon>RequestedLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActiveLoan.resx">
+      <DependentUpon>ActiveLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckCustomerTransactions.resx">
+      <DependentUpon>CheckCustomerTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseLoan.resx">
+      <DependentUpon>ChooseLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerHome.resx">
+      <DependentUpon>CustomerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerInfo.resx">
+      <DependentUpon>CustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerInformation.resx">
+      <DependentUpon>CustomerInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeHome.resx">
+      <DependentUpon>EmployeeHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeInformation.resx">
+      <DependentUpon>EmployeeInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeTransaction.resx">
+      <DependentUpon>EmployeeTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoanApplication.resx">
+      <DependentUpon>LoanApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoanTransactionsHistory.resx">
+      <DependentUpon>LoanTransactionsHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEmployee.resx">
+      <DependentUpon>ManageEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageLoans.resx">
+      <DependentUpon>ManageLoans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyLoans.resx">
+      <DependentUpon>MyLoans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyTransactions.resx">
+      <DependentUpon>MyTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RequestedLoan.resx">
+      <DependentUpon>RequestedLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Bank_loan_systemDataSet.xsc">
+      <DependentUpon>Bank_loan_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bank_loan_systemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bank_loan_systemDataSet.xss">
+      <DependentUpon>Bank_loan_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet1.xsc">
+      <DependentUpon>Bank_loan_systemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bank_loan_systemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bank_loan_systemDataSet1.xss">
+      <DependentUpon>Bank_loan_systemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet2.xsc">
+      <DependentUpon>Bank_loan_systemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bank_loan_systemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bank_loan_systemDataSet2.xss">
+      <DependentUpon>Bank_loan_systemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet3.xsc">
+      <DependentUpon>Bank_loan_systemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bank_loan_systemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bank_loan_systemDataSet3.xss">
+      <DependentUpon>Bank_loan_systemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet4.xsc">
+      <DependentUpon>Bank_loan_systemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bank_loan_systemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bank_loan_systemDataSet4.xss">
+      <DependentUpon>Bank_loan_systemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet5.xsc">
+      <DependentUpon>Bank_loan_systemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bank_loan_systemDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bank_loan_systemDataSet5.xss">
+      <DependentUpon>Bank_loan_systemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet6.xsc">
+      <DependentUpon>Bank_loan_systemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bank_loan_systemDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bank_loan_systemDataSet6.xss">
+      <DependentUpon>Bank_loan_systemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet7.xsc">
+      <DependentUpon>Bank_loan_systemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bank_loan_systemDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bank_loan_systemDataSet7.xss">
+      <DependentUpon>Bank_loan_systemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet8.xsc">
+      <DependentUpon>Bank_loan_systemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bank_loan_systemDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bank_loan_systemDataSet8.xss">
+      <DependentUpon>Bank_loan_systemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet9.xsc">
+      <DependentUpon>Bank_loan_systemDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_loan_systemDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bank_loan_systemDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bank_loan_systemDataSet9.xss">
+      <DependentUpon>Bank_loan_systemDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Admin\Admin.csproj">
+      <Project>{d844a91a-50f9-4865-ba98-a4073e9c5bde}</Project>
+      <Name>Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Customer\Customer.csproj">
+      <Project>{98a55406-3539-4dfb-927f-eeebea7dd55f}</Project>
+      <Name>Customer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Employee\Employee.csproj">
+      <Project>{6d78c4d2-31f7-4aee-a0c1-48b1ab6740b4}</Project>
+      <Name>Employee</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
